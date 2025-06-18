@@ -34,14 +34,15 @@ Unlike traditional chatbots, NeuroAid is an emotionally intelligent journal-anal
 ---
 
 📁 File Structure
-
-```bash
-📦NeuroAid/
- ┣ 📁data/              # Raw & processed datasets
- ┣ 📁models/            # Saved ML models
- ┣ 📁app/               # Streamlit frontend
- ┣ 📁notebooks/         # Model training, EDA, prototyping
- ┣ 📁utils/             # Helper functions
- ┣ 📄README.md
- ┣ 📄requirements.txt
- ┗ 📄LICENSE
+NeuroAid/
+│
+├── app.py
+├── utils.py
+├── emotion_model.py
+├── hf_model.py              # Your HuggingFace classifier
+├── requirements.txt         # All packages
+├── README.md                # Documentation
+├── .gitignore               # (we'll create this)
+├── assets/                  # Images, icons, UI assets
+├── models/                  # Saved ML models
+└── datasets/                # Raw or preprocessed data (if not too heavy)
